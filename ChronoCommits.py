@@ -6,7 +6,7 @@ from tempfile import TemporaryDirectory
 
 from rich.logging import RichHandler
 from rich.progress import track
-from rich.prompt import Prompt
+from rich.prompt import Prompt, IntPrompt
 
 logger = logging.getLogger("ChronoCommits")
 cwd = Path(__file__).parent.resolve()
@@ -69,8 +69,11 @@ def main() -> None:
             "An email linked to your GitHub account (can be private)"
         )
         setup_git_dir(git_email, git_dir)
+        start_year = IntPrompt.ask(
+            "What year would you like your commits to start from?", default=2025
+        )
         for fake_date in track(
-            iter_dates(date(2024, 3, 1), date.today()),
+            iter_dates(date(start_year, 1, 1), date.today()),
             description="Creating fake commits in repository..",
         ):
             create_empty_past_commit(fake_date, git_dir)
