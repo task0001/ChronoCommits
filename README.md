@@ -8,8 +8,6 @@ ChronoCommits allows you to "fake" your activity on your github profile by creat
 
 This tool is for educational purposes only. Faking GitHub activity (e.g., backdating commits, generating artificial contributions) may violate:
 
-**GitHub's Terms of Service**: [Section B.3](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service#3-user-content) prohibits "false or misleading" activity.
-
 **Employer/OSS Trust**: Many organizations audit commit history. Artificial activity can damage credibility.
 
 **Personal Integrity**: Authentic contributions matter more than green squares.
