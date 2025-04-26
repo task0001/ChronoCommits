@@ -18,6 +18,10 @@ This tool is for educational purposes only. Faking GitHub activity (e.g., backda
 - Diluted value of real achievements.
 
 **This tool does not endorse or encourage misuse. You assume all risks.**
+
+## Results
+![image](https://github.com/user-attachments/assets/082d9a93-8369-444c-ab19-480358a16a42)
+
 ## Installation
 
 From source:
